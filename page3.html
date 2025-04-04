@@ -21,23 +21,24 @@
         <div>
             <label>
                 Имя
-                <input type="text" name="name"/>
+                <input type="text" name="name" required/>
             </label>
         </div>
         <br>
         <div>
             <label>
                 Фамилия
-                <input type="text" name="surname"/>
+                <input type="text" name="surname" required/>
             </label>
         </div>
         <br>
         <div>
             <label>
                 Телефон
-                <select name="phone_code">
+                <select name="phone_code" required>
                     <option value="+375" selected>+375</option>
                     <option value="+7">+7</option>
+                    <option value="+380">+380</option>
                 </select>
                 <input type="text" name="phone" required/>
             </label>
@@ -46,7 +47,7 @@
         <div>
             <label>
                 Email
-                <input type="email" name="email"/>
+                <input type="email" name="email" required/>
             </label>
         </div>
         <br>
@@ -55,7 +56,8 @@
                 Объем памяти
                 <select name="memory">
                     <option value="64" selected>64</option>
-                    <option value="128">128</option>
+                    <option value="256">256</option>
+                    <option value="512">512</option>
                 </select>
             </label>
         </div>
@@ -64,10 +66,10 @@
             <label>
                 Способ доставки<br>
                 <label>
-                    <input type="radio" name="delivery" value="Курьером" checked>Курьером<br>
+                    <input type="radio" name="delivery" value="Курьером" checked required>Курьером<br>
                 </label>
                 <label>
-                    <input type="radio" name="delivery" value="Самовывоз">Самовывоз<br>
+                    <input type="radio" name="delivery" value="Самовывоз" required>Самовывоз<br>
                 </label>
             </label>
         </div>
@@ -96,7 +98,7 @@
         </div>
         <br>
         <label>
-            <input type="checkbox" name="conditions" required>Принимаю <a href="#">условия сайта</a><br>
+            <input type="checkbox" name="conditions">Принимаю <a href="https://google.com">условия сайта</a><br>
         </label>
         <br>
         <label>
